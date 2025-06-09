@@ -1,3 +1,4 @@
+// File: src/App.tsx
 import React, { useState } from 'react';
 import 'bulma/css/bulma.css';
 import './App.scss';
@@ -124,8 +125,8 @@ export const App: React.FC = () => {
 
       <ul>
         {/* 4. Render the list using visibleGoods */}
-        {visibleGoods.map((good, index) => (
-          <li key={index} data-cy="Good">
+        {visibleGoods.map((good) => (
+          <li key={good} data-cy="Good">
             {good}
           </li>
         ))}
